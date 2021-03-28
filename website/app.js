@@ -1,6 +1,6 @@
 'use strict';
 
-let __API_URL__ = '';
+let __API_URL__ = 'http://localhost:3000';
 let GEOCODE_API_KEY = '';
 
 let page = 1;
