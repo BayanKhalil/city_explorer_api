@@ -1,10 +1,10 @@
 'use strict';
 
 
-const _ = require('lodash');
+// const _ = require('lodash');
 
-const arr = [0, 1, false, 2, '', 3];
-console.log(_.compact(arr));
+// const arr = [0, 1, false, 2, '', 3];
+// console.log(_.compact(arr));
 
 // /////////////////////////////////////////////////////////////////////////
 
@@ -30,13 +30,13 @@ function handleLocation(request, response) {
     //     city : city,
     //     latitude: getLocation[0].lat,
     //     longitude: getLocation[0].lon
-    const data = arrData[0];
+    const data = getLocation[0];
     let obj=new Location(request.query.city, data.display_name, data.lat, data.lon);
     response.send(obj);
 
 
     };
-    response.send("hello there!!!!");
+    // response.send("hello there!!!!");
 // }
 
 function Location(name, location, latitude, longitude) {
